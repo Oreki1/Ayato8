@@ -36,4 +36,9 @@ for (const file of player) {
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
 
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+
 client.login(process.env.BOTTOKEN);
