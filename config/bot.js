@@ -7,8 +7,7 @@ module.exports = {
         success: ':white_check_mark:',
     },
 
-    discord: {
-        token: (process.env.BOTTOKEN),
+    discord: 
         prefix: 'mh,',
         activity: '#MeHorny',
     },
