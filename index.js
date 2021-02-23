@@ -1,7 +1,11 @@
 const fs = require('fs');
 const discord = require('discord.js');
-const PORT = process.env.PORT || 3000
-const app = express();
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+
 const client = new discord.Client({ disableMentions: 'everyone' });
 
 const { Player } = require('discord-player');
