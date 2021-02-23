@@ -7,7 +7,7 @@ module.exports = {
         success: ':white_check_mark:',
     },
 
-    discord: 
+    discord: {
         prefix: 'mh,',
         activity: '#MeHorny',
     },
