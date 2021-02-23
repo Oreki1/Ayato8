@@ -36,4 +36,10 @@ for (const file of player) {
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
 
+let port = process.env.PORT || 8000;
+
+app.listen(port, ()=>{
+    console.log('Bot is running at the port ${port}');
+});
+
 client.login(process.env.BOTTOKEN);
