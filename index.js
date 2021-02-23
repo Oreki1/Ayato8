@@ -1,7 +1,6 @@
 const fs = require('fs');
 const discord = require('discord.js');
 
-const PORT = require('process.env.PORT');
 
 const client = new discord.Client({ disableMentions: 'everyone' });
 
