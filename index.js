@@ -1,10 +1,7 @@
 const fs = require('fs');
 const discord = require('discord.js');
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
+const PORT = require('process.env.PORT');
 
 const client = new discord.Client({ disableMentions: 'everyone' });
 
